@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/HWJavaScriptBridge.svg?style=flat)](https://cocoapods.org/pods/HWJavaScriptBridge)
 [![Platform](https://img.shields.io/cocoapods/p/HWJavaScriptBridge.svg?style=flat)](https://cocoapods.org/pods/HWJavaScriptBridge)
 
-![bridge](./bridge.gif)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -83,7 +81,7 @@ pod 'HWJavaScriptBridge'
 
 ## Author
 
-bbc6bae9, chinahuanghong@gmail.com
+bbc6bae9, bbc6bae9@gmail.com
 
 ## License
 

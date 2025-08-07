@@ -16,12 +16,29 @@ iOS 6.0+
 
 ## Installation
 
+### CocoaPods
+
 HWJavaScriptBridge is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'HWJavaScriptBridge'
 ```
+
+### Swift Package Manager
+
+You can also use Swift Package Manager to install HWJavaScriptBridge. Add the following dependency to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/bbc6bae9/HWJavaScriptBridge.git", from: "1.0.0")
+]
+```
+
+Or add it directly in Xcode:
+1. Go to File → Add Package Dependencies
+2. Enter the repository URL: `https://github.com/bbc6bae9/HWJavaScriptBridge.git`
+3. Select the version you want to use
 
 ## Usage
 

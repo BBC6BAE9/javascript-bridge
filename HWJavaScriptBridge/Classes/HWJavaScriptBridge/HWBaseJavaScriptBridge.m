@@ -2,12 +2,13 @@
 //  HNBaseBridge.m
 //  JSBridge
 //
-//  Created by ihenryhuang on 2022/4/24.
+//  Created by hong on 2022/4/24.
 //  Copyright © 2022 Tencent. All rights reserved.
 //
 
 #import "HWBaseJavaScriptBridge.h"
 #import "NSString+HWJavaScriptProcess.h"
+#import "JSBridgeJSCode.h"
 
 @implementation HWBaseJavaScriptBridge{
     long _uniqueId; // 自增唯一的客户端调用JS回调的id
@@ -107,9 +108,7 @@
 #pragma mark - private
 /// JavaScriptBridge的代码
 - (NSString*)javaScriptBridge {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"honejsbridge" ofType:@"js"];
-    NSString *script = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    return script;
+    return honeJSBridgeJS();
 }
 
 - (NSString *)serializeMessage:(id)message pretty:(BOOL)pretty{

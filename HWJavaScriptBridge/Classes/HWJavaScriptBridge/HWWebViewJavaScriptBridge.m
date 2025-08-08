@@ -2,11 +2,12 @@
 //  HNWebViewBridge.m
 //  JSBridge
 //
-//  Created by ihenryhuang on 2022/4/24.
+//  Created by hong on 2022/4/24.
 //  Copyright © 2022 Tencent. All rights reserved.
 //
 
 #import "HWWebViewJavaScriptBridge.h"
+#import "JSBridgeJSCode.h"
 
 /// 代理：解决addScriptMessageHandler导致的循环饮用问题
 @interface WeakProxy : NSProxy
@@ -67,7 +68,7 @@
     
     // 注入 JSBridge
     NSString *jspath = [[NSBundle mainBundle]pathForResource:@"honejsbridge" ofType:@"js"];
-    NSString *str = [NSString stringWithContentsOfFile:jspath encoding:NSUTF8StringEncoding error:nil];
+    NSString *str = honeJSBridgeJS();
     //注入时机是在webview加载状态WKUserScriptInjectionTimeAtDocumentStart、WKUserScriptInjectionTimeAtDocumentEnd
     WKUserScript *userScript = [[WKUserScript alloc] initWithSource:str injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
     [_webView.configuration.userContentController addUserScript:userScript];

@@ -2,7 +2,7 @@
 //  HNJavaScriptBridgeBase.m
 //  JSBridge
 //
-//  Created ihenryhuang on 2022/4/20.
+//  Created hong on 2022/4/20.
 //  Copyright © 2022 Tencent. All rights reserved.
 //
 

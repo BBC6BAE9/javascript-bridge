@@ -50,7 +50,7 @@ Or add it directly in Xcode:
         NSDictionary *clientData = @{
             @"code":@(0),
             @"msg":@"success",
-            @"data":@{@"company":@"tencent"}
+            @"data":@{@"company":@"Fooman"}
         };
         responseCallback(clientData);
     }];
@@ -74,7 +74,7 @@ Or add it directly in Xcode:
         NSDictionary *clientData = @{
             @"code":@(0),
             @"msg":@"success",
-            @"data":@{@"company":@"tencent"}
+            @"data":@{@"company":@"Fooman"}
         };
         responseCallback(clientData);
     }];

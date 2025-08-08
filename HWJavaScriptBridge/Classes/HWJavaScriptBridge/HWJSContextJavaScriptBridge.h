@@ -3,7 +3,7 @@
 //  JSBridge
 //
 //  Created hong on 2022/4/20.
-//  Copyright © 2022 Tencent. All rights reserved.
+//  Copyright © 2022 Fooman. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

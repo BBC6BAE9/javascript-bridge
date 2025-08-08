@@ -3,7 +3,7 @@
 //  HNPreRenderiOS
 //
 //  Createdby hongon 2022/4/27.
-//  Copyright © 2022 Tencent. All rights reserved.
+//  Copyright © 2022 Fooman. All rights reserved.
 //
 
 #import "NSString+HWJavaScriptProcess.h"

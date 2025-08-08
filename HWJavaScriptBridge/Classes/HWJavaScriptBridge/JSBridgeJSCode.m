@@ -3,7 +3,7 @@
 //  HWJavaScriptBridge
 //
 //  Created by hong on 2022/6/5.
-//  Copyright © 2022 Tencent. All rights reserved.
+//  Copyright © 2022 Fooman. All rights reserved.
 //
 
 #import "JSBridgeJSCode.h"

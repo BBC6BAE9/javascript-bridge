@@ -23,7 +23,7 @@ typedef void (^HWJBResponseCallback)(id responseData);
 /// 
 /// - Parameter data: The data passed from JavaScript, typically an NSDictionary or NSArray.
 /// - Parameter responseCallback: The callback block to send a response back to JavaScript.
-typedef void (^HNJBHandler)(id data, HWJBResponseCallback responseCallback);
+typedef void (^HWJBHandler)(id data, HWJBResponseCallback responseCallback);
 
 /// Message type for JavaScript bridge communication.
 /// 
@@ -104,7 +104,7 @@ typedef NSDictionary HNJBMessage;
 ///     responseCallback(userInfo);
 /// }];
 /// ```
-- (void)registerHandler:(NSString *)handlerName handler:(__nullable HNJBHandler)handler;
+- (void)registerHandler:(NSString *)handlerName handler:(__nullable HWJBHandler)handler;
 
 /// Calls a JavaScript method and receives a response.
 /// 

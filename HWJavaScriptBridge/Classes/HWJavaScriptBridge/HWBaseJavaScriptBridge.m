@@ -23,7 +23,7 @@
 }
 
 #pragma mark - public
-- (void)registerHandler:(NSString *)handlerName handler:(__nullable HNJBHandler)handler{
+- (void)registerHandler:(NSString *)handlerName handler:(__nullable HWJBHandler)handler{
     self.messageHandlers[handlerName] = [handler copy];
 }
 
@@ -88,7 +88,7 @@
                 // Do nothing
             };
         }
-        HNJBHandler handler = self.messageHandlers[messageDic[@"handlerName"]];
+        HWJBHandler handler = self.messageHandlers[messageDic[@"handlerName"]];
         if (!handler) {
             NSLog(@"HNJBNoHandlerException, No handler for message from JS: %@", message);
             return;

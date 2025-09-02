@@ -13,7 +13,6 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-pp-token"
 
-// NOCC:CCN(设计如此:此处是JS代码，不参与Objective - C的代码检查)
 NSString * honeJSBridgeJS() {
 #define __hone_js_func__(x) #x
    

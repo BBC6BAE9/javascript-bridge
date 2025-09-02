@@ -8,6 +8,12 @@
 
 #import "HWJSContextJavaScriptBridge.h"
 
+@interface HWJSContextJavaScriptBridge()
+
+@property(nonatomic, strong) JSContext *ctx;
+
+@end
+
 @implementation HWJSContextJavaScriptBridge
 
 - (instancetype)initWithJSContext:(JSContext *)jsContext{

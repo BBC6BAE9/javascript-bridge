@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "HWJavaScriptBridge",
     platforms: [
-        .iOS(.v9),
+        .iOS(.v12),
         .macOS(.v10_13)
     ],
     products: [
